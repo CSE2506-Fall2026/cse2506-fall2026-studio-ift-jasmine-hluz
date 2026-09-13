@@ -1,5 +1,6 @@
 header {
     overflow: auto;
+
 }
 
 #wustl-branding {
@@ -13,7 +14,11 @@ header {
 #main-menu-container {
     width: 100%;
     background-color: #3d3d3d;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
 
 .container {
     width: 92%;
@@ -51,7 +56,16 @@ header {
     overflow: hidden;
     background-color: #3d3d3d;
     font-family: Arial;
+    
 }
+#main-menu-container.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 
 
 /* Links inside the navbar */
@@ -63,6 +77,7 @@ header {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
 }
 
 .navbar a:hover {
@@ -148,3 +163,4 @@ header a {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
